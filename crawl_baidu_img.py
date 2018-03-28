@@ -92,12 +92,12 @@ def get_img(keyword_list, page_num, img_dir):
 
 if __name__ == '__main__':
 
-    terror_list = ['isis', '暴恐', '东突', '伊斯兰国', '本拉登', '恐怖主义', '藏独', '疆独', '邪教']
+    terror_list = ['暴恐', '东突']
 
-    politics_list = ['毛泽东', '邓小平', '江泽民', '胡锦涛', '习近平', '李克强', '王岐山']
+    politics_list = ['毛泽东', '邓小平']
 
     normal_list = ['风景', '证件照', '老照片', '人物照', '人们', '农民', '工人', '白领', '动物', '花', '树', '动漫',
-                   '幸福生活', '玩具', '小宝贝', '新疆', '西藏', '北京', '上海']
+                   '幸福生活', '玩具', '小宝贝']
 
     get_img(terror_list, 500, './terror/')
     # get_img(politics_list, 500, './politics/')
