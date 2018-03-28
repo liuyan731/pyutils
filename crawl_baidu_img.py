@@ -92,28 +92,27 @@ def get_img(keyword_list, page_num, img_dir):
 
 if __name__ == '__main__':
 
-    terror_list = ['暴恐', '东突']
+    flower_list = ['玫瑰', '兰花']
 
-    politics_list = ['毛泽东', '邓小平']
+    dog_list = ['哈士奇', '吉娃娃']
 
-    normal_list = ['风景', '证件照', '老照片', '人物照', '人们', '农民', '工人', '白领', '动物', '花', '树', '动漫',
-                   '幸福生活', '玩具', '小宝贝']
+    cat_list = ['折耳', '英短']
 
-    get_img(terror_list, 500, './terror/')
-    # get_img(politics_list, 500, './politics/')
-    # get_img(normal_list, 100, './normal/')
+    get_img(flower_list, 500, './flower/')
+    # get_img(dog_list, 500, './dog/')
+    # get_img(cat_list, 100, './cat/')
 
     '''
     # 并行抓取
     threads = []
 
-    t1 = threading.Thread(target=get_img, args=(terror_list, 500, './terror/'))
+    t1 = threading.Thread(target=get_img, args=(flower_list, 500, './flower/'))
     threads.append(t1)
 
-    t2 = threading.Thread(target=get_img, args=(politics_list, 500, './politics/'))
+    t2 = threading.Thread(target=get_img, args=(dog_list, 500, './dog/'))
     threads.append(t2)
 
-    t3 = threading.Thread(target=get_img, args=(normal_list, 100, './normal/'))
+    t3 = threading.Thread(target=get_img, args=(cat_list, 100, './cat/'))
     threads.append(t3)
 
     for t in threads:
